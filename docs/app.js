@@ -1,5 +1,6 @@
-// AI News - Interactive Features
+// AI News - Swiss/Modernist site
 document.addEventListener('DOMContentLoaded', function() {
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -7,6 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
       if (target) { target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+  // Scroll header effect
+  const header = document.querySelector('header');
+  if (header) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
+
+  // Lazy load images
   if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
