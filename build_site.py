@@ -882,7 +882,7 @@ def generate_article_page(article, all_articles):
 
 
 def generate_site():
-    output_dir = "site"
+    output_dir = "docs"
     os.makedirs(output_dir, exist_ok=True)
     
     # Write CSS
