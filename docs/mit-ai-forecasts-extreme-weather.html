@@ -11,11 +11,7 @@
   <meta property="og:type" content="article">
   <meta name="theme-color" content="#000000">
   <meta name="robots" content="index,follow">
-  
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,7 +28,7 @@
   </header>
 
   <article class="article-page">
-    <span class="category-tag">AI in Action</span><span class="category-tag">Data Engineering</span><span class="category-tag">Deep Dives</span>
+    <span class="category-tag">Environment</span><span class="category-tag">Government AI</span><span class="category-tag">Data Engineering</span>
     <h1>MIT AI forecasts extreme weather without historical data</h1>
     <div class="meta">
       <span class="byline">By Ryan Daws</span>
@@ -42,9 +38,9 @@
     <img src="images/mit-weather.jpg" alt="MIT AI forecasts extreme weather without historical data" loading="lazy">
     <div class="article-body">
       <p class="lead">MIT engineers have built an AI tool that forecasts extreme weather without training on historical disaster data.</p>
-<p>Kai Chang, a mechanical engineering graduate student, and Professor Themis Sapsis developed the tool. It produces maps of events that have not appeared in a region&#x27;s historical record but remain statistically-possible. Each map also carries estimates of the event&#x27;s likely duration and intensity, alongside a separate estimate of the area it might affect.</p>
+<p>Kai Chang, a mechanical engineering graduate student, and Professor Themis Sapsis developed the tool. It produces maps of events that have not appeared in a region&#x27;s historical record but remain statistically-possible. Each map also carries estimates of the event&#x27;s likely duration and intensity.</p>
 <h2>Forecasting extreme weather events without historical precedent</h2>
-<p>Sapsis holds the William I. Koch Professorship in Mechanical and Ocean Engineering at MIT. Both researchers are affiliated with the MIT Center for Computational Science and Engineering, and Sapsis also holds an appointment with the MIT Institute for Data, Systems, and Society. The pair describe the method, named Extreme Event Aware or eta-learning, in a paper published in Nature Communications on 20 August.</p>
+<p>Sapsis holds the William I. Koch Professorship in Mechanical and Ocean Engineering at MIT. Both researchers are affiliated with the MIT Center for Computational Science and Engineering. The pair describe the method, named Extreme Event Aware or eta-learning, in a paper published in Nature Communications on 20 August.</p>
 <p>Existing risk models work differently. Insurers, city planners, and grid operators typically want to know what a once-in-a-century storm might look like for a specific location. Current simulations usually depend on datasets that already contain extreme events, learning the conditions that produced them before projecting similar patterns forward.</p>
 <p>Chang argues this current approach creates a limit on what such models can show. These methods assume there are very disastrous events that we have seen in the dataset, and they build a method to either estimate the risk of those events, or they try to predict exactly the events that have happened.</p>
 <p>Sapsis frames the same limitation through Hurricane Katrina. An event like Hurricane Katrina is something that happens every 30 to 40 years. What will be the Katrina that happens every 100 years? How bad will it be? That is exactly what we are trying to quantify, to help planners prepare for plausible extreme scenarios.</p>
@@ -52,6 +48,7 @@
 <p>The algorithm works from two types of data. Point statistics capture how often a given intensity level, such as the maximum rainfall recorded across a map, occurs within a dataset. Spatial maps show how an event&#x27;s impact varies across a region.</p>
 <p>Learning the statistical relationship between the two lets the algorithm build spatial patterns for events beyond anything in its training data, without needing prior examples of those exact extremes.</p>
 <p>The researchers tested the approach on precipitation across the continental US. They started with 25 years of hourly rainfall data, pooled into daily maps, and computed point statistics describing how often the maximum rainfall on a map reached a given level across that full record.</p>
+<p>The training window for the spatial model was narrow. They trained that part of the algorithm using paired low-resolution and high-resolution maps drawn from only the first six months of the 25-year record, a period that contained few or no examples of the heaviest rainfall levels.</p>
 <h2>Testing infrastructure against worst-case maps</h2>
 <p>The highest rainfall ever recorded in New York City measures 200 millimetres. The method can generate plausible maps of a storm that produces 300 millimetres instead, a level with no match in the observational record.</p>
 <p>A user can prompt the trained algorithm to show what a once-in-a-century storm might look like for a named city. The output takes the form of maps showing statistically-plausible storms at that frequency.</p>
@@ -62,7 +59,7 @@
 <p>The paper was published in Nature Communications on 20 August 2026.</p>
     </div>
     <div class="tags">
-      <a href="#">disaster planning</a><a href="#">flood prediction</a><a href="#">infrastructure</a><a href="#">machine learning</a><a href="#">mit</a><a href="#">predictive modelling</a><a href="#">risk assessment</a><a href="#">weather forecasting</a>
+      <a href="#">weather forecasting</a><a href="#">machine learning</a><a href="#">mit</a><a href="#">risk assessment</a>
     </div>
   </article>
 
@@ -75,18 +72,22 @@
           <div class="card-content">
             <span class="category-tag">AI Business Strategy</span>
             <h3>A quarter of Nvidia&#x27;s business next year comes from labs it is financing</h3>
-            <div class="card-meta"><span class="date">August 27, 2026</span></div>
-            <a href="nvidia-circular-financing-ai-labs.html" class="read-more-small">Read &rarr;</a>
+            <div class="card-meta">
+              <span class="date">August 27, 2026</span>
+            </div>
+            <a href="nvidia-circular-financing-ai-labs.html" class="read-more-small">Read</a>
           </div>
         </article>
 
         <article class="article-card">
           <img src="images/gatik-truck.jpg" alt="Gatik raises $200M to scale AI-powered autonomous freight" loading="lazy">
           <div class="card-content">
-            <span class="category-tag">AI in Action</span>
+            <span class="category-tag">AI Startups</span>
             <h3>Gatik raises $200M to scale AI-powered autonomous freight</h3>
-            <div class="card-meta"><span class="date">August 26, 2026</span></div>
-            <a href="gatik-200m-ai-autonomous-freight.html" class="read-more-small">Read &rarr;</a>
+            <div class="card-meta">
+              <span class="date">August 26, 2026</span>
+            </div>
+            <a href="gatik-200m-ai-autonomous-freight.html" class="read-more-small">Read</a>
           </div>
         </article>
 
@@ -95,8 +96,10 @@
           <div class="card-content">
             <span class="category-tag">AI Hardware</span>
             <h3>NVIDIA Jetson Orin Nano 2 brings physical AI to drones and robots</h3>
-            <div class="card-meta"><span class="date">August 26, 2026</span></div>
-            <a href="nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots.html" class="read-more-small">Read &rarr;</a>
+            <div class="card-meta">
+              <span class="date">August 26, 2026</span>
+            </div>
+            <a href="nvidia-jetson-orin-nano-2.html" class="read-more-small">Read</a>
           </div>
         </article>
 
@@ -105,8 +108,10 @@
           <div class="card-content">
             <span class="category-tag">AI Hardware</span>
             <h3>XPENG IRON humanoid robot draws record physical AI funding</h3>
-            <div class="card-meta"><span class="date">August 24, 2026</span></div>
-            <a href="xpeng-iron-humanoid-robot-draws-record-physical-ai-funding.html" class="read-more-small">Read &rarr;</a>
+            <div class="card-meta">
+              <span class="date">August 24, 2026</span>
+            </div>
+            <a href="xpeng-iron-humanoid-robot.html" class="read-more-small">Read</a>
           </div>
         </article>
 
@@ -124,7 +129,6 @@
       </div>
     </div>
   </footer>
-
   <script src="app.js"></script>
 </body>
 </html>

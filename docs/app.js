@@ -1,4 +1,4 @@
-// AI News - Swiss/Modernist site
+// AI News - Swiss/Modernist site interactions
 document.addEventListener('DOMContentLoaded', function() {
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
